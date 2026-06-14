@@ -1704,7 +1704,8 @@ nav.scrolled {
 .res-img,
 .txt,
 .footer-mobile,
-.reservation-ti {
+.reservation-ti,
+.btn2.b {
   display: none;
 }
 
@@ -1950,7 +1951,13 @@ nav.scrolled {
     bottom: -15px;
   }
 
-  .btn2 {
+  .btn2.a {
+    display: none;
+  }
+
+  .btn2.b {
+    display: block;
+    display: flex;
     position: relative;
     bottom: -80px;
   }
