@@ -8,7 +8,7 @@ A modern and fully responsive travel website designed to showcase stunning desti
 
 ## 📸 Preview
 
-![Veltra Preview](assets/brands.veltra.png)
+assets/brands/veltra.png
 
 ---
 
