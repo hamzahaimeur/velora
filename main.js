@@ -67,47 +67,32 @@ topImg.addEventListener("click", () => {
     });
 });
 
-// - menu links - 
+// menuLinks
 
 const hamburger = document.querySelector(".hamburger");
 const menuPanel = document.querySelector(".menu-panel");
-
-hamburger.addEventListener("click", () => {
-  menuPanel.classList.toggle("active");
-});
-
 const closeBtn = document.querySelector(".close-menu");
+const overlay = document.querySelector(".overlay");
+const menuLinks = document.querySelectorAll(".menu-panel a");
 
-closeBtn.addEventListener("click", () => {
+function openMenu() {
+  menuPanel.classList.add("active");
+  overlay.classList.add("active");
+}
+
+function closeMenu() {
   menuPanel.classList.remove("active");
-});
+  overlay.classList.remove("active");
+}
 
-// menu mobile 
+hamburger.addEventListener("click", openMenu);
 
-const buttons = document.querySelectorAll(".menu-categories button");
-const groups = document.querySelectorAll(".menu-group");
-const title = document.querySelector(".menu-category-title h3");
+closeBtn.addEventListener("click", closeMenu);
 
-buttons.forEach(button => {
+overlay.addEventListener("click", closeMenu);
 
-  button.addEventListener("click", () => {
-
-    buttons.forEach(btn =>
-      btn.classList.remove("active")
-    );
-
-    groups.forEach(group =>
-      group.classList.remove("active")
-    );
-
-    button.classList.add("active");
-
-    const category = button.dataset.category;
-
-    document
-      .getElementById(category);
-  });
-
+menuLinks.forEach(link => {
+  link.addEventListener("click", closeMenu);
 });
 
 // menuData
@@ -118,19 +103,19 @@ const menuData = {
       name: "HUMMUS",
       price: "TBD",
       desc: "Creamy hummus, tahini, olive oil, chickpeas, paprika, parsley",
-      img: "assest/menu/hummus.png"
+      img: "assets/menu/hummus.png"
     },
     {
       name: "FATTOUSH SALAD",
       price: "TBD",
       desc: "Crisp vegetables, mixed greens, sumac, olive oil, pita crisps",
-      img: "assest/menu/salad.png"
+      img: "assets/menu/salad.png"
     },
     {
       name: "FALAFEL",
       price: "TBD",
       desc: "Crispy chickpea fritters, tahini sauce, pickles, fresh herbs",
-      img: "assest/menu/falafel.png"
+      img: "assets/menu/falafel.png"
     }
   ],
 
@@ -139,13 +124,13 @@ const menuData = {
       name: "GRILLED CHICKEN",
       price: "TBD",
       desc: "Halal grilled chicken with herbs and vegetables",
-      img: "assest/menu/chicken.png"
+      img: "assets/menu/chicken.png"
     },
     {
       name: "LAMB SHANK",
       price: "TBD",
       desc: "Slow cooked halal lamb with special sauce",
-      img: "assest/menu/lamb.png"
+      img: "assets/menu/lamb.png"
     }
   ],
 
@@ -154,7 +139,7 @@ const menuData = {
       name: "MIXED GRILL",
       price: "TBD",
       desc: "Premium halal mixed grill platter",
-      img: "assest/menu/grill.png"
+      img: "assets/menu/grill.png"
     }
   ],
 
@@ -163,13 +148,13 @@ const menuData = {
       name: "KUNAFA",
       price: "TBD",
       desc: "Traditional kunafa with pistachio topping",
-      img: "assest/menu/kunafa.png"
+      img: "assets/menu/kunafa.png"
     },
     {
       name: "CHEESECAKE",
       price: "TBD",
       desc: "Creamy cheesecake with berry sauce",
-      img: "assest/menu/cheesecake.png"
+      img: "assets/menu/cheesecake.png"
     }
   ],
 
@@ -178,13 +163,13 @@ const menuData = {
       name: "ORANGE JUICE",
       price: "TBD",
       desc: "Freshly squeezed orange juice",
-      img: "assest/menu/orange.png"
+      img: "assets/menu/orange.png"
     },
     {
       name: "MINT LEMONADE",
       price: "TBD",
       desc: "Fresh lemon with mint and ice",
-      img: "assest/menu/lemonade.png"
+      img: "assets/menu/lemonade.png"
     }
   ]
 };
@@ -274,5 +259,35 @@ document.addEventListener("click", (e) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   renderMobile("starters");
+});
+
+// gallery animation
+
+const galleryItems = document.querySelectorAll(".gallery-item");
+
+const galleryObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if (entry.isIntersecting) {
+
+      entry.target.classList.add("show");
+
+      galleryObserver.unobserve(entry.target);
+
+    }
+
+  });
+
+}, {
+  threshold: 0.2
+});
+
+galleryItems.forEach((item, index) => {
+
+  item.style.transitionDelay = `${index * 100}ms`;
+
+  galleryObserver.observe(item);
+
 });
 
