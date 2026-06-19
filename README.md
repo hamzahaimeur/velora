@@ -1,3 +1,5 @@
+<img src="/assets/brands/veltra.png" alt="Portfolio banner" width="100%" align="center"/>
+
 # 🌐 Veltra - Restaurant Website Template
 
 A modern and fully responsive restaurant website template designed for commercial use.
@@ -44,7 +46,7 @@ Unlike a portfolio-only project, this template is designed to be reused and adap
 ## 📁 Project Structure
 
 ```text
-project-root/
+veltra/
 ├── assets/
 ├── css/
 ├── js/
