@@ -3,775 +3,3188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="assets/brands/brand-01.png">
-  <title>Veltra — Fine Dining Experience</title>
-  <meta 
-    name="description" 
-    content="A premium restaurant website template available for sale, built with modern Front-End development and elegant UI/UX design."
-  />
-  <meta
-  property="og:title"
-  content="Veltra — Fine Dining Experience"
-  />
-  <meta
-    property="og:description"
-    content="A restaurant concept portfolio project showcasing modern Front-End development and UI/UX design skills."
-  />
-  <meta
-    property="og:type"
-    content="website"
-  />
-  <meta
-    property="og:url"
-    content="https://veltra-xi.vercel.app/"
-  />
-  <meta
-    property="og:image"
-    content="https://veltra-xi.vercel.app/assets/preview.png"
-  />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Velora | Premium Halal Restaurant Template</title>
+  <meta name="description" content="Explore Velora, a premium luxury halal restaurant website template crafted to showcase elegant design, modern user experience, and fine dining branding.">
+  <meta name="keywords" content="halal restaurant template, luxury restaurant website, fine dining template, restaurant UI design, Velora">
+  <meta name="author" content="Velora">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <link rel="canonical" href="https://velora.vercel.app/">
+  <meta name="theme-color" content="#0e0e0e">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:title" content="Velora | Premium Halal Restaurant Template">
+  <meta property="og:description" content="Explore Velora, a premium luxury halal restaurant website template crafted to showcase elegant design, modern user experience, and fine dining branding.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://velora.vercel.app/">
+  <meta property="og:image" content="https://velora.vercel.app/assets/preview.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Velora">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Velora | Premium Halal Restaurant Template">
+  <meta name="twitter:description" content="Explore Velora, a premium luxury halal restaurant website template crafted to showcase elegant design, modern user experience, and fine dining branding.">
+  <meta name="twitter:image" content="https://velora.vercel.app/assets/preview.webp">
+  <link rel="icon" type="image/svg+xml" href="assets/brands/velora.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brands/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brands/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/brands/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="main.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
 </head>
 <body>
 
   <section class="home" id="home">
-    <nav>
 
-      <img id="top" class="brand" src="assets/brands/brand.png" alt="brand">
+    <nav class="navbar">
 
-      <div class="mobile-menu">
+      <div href="" class="brand">
+        <img src="/assets/brands/velora-nav.svg
+        " alt="Velora Logo">
+        <div class="brand-text">
+          <span class="brand-name">VELORA</span>
+          <span class="brand-subtitle">FINE DINING</span>
+        </div>
+      </div>
 
-        <button class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+      <ul class="nav-links">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservation">Reservations</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+
+        <a href="#reservation" class="reservation-btn">
+          <i class="fa-regular fa-calendar"></i>
+          <span>Reserve A Table</span>
+        </a>
+
+      </div>
+
+      <button class="menu-btn" aria-label="Open Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </nav>
+
+    <div class="mobile-menu">
+
+      <div class="menu-top">
+
+        <a href="#home" class="mobile-brand">
+          <img src="assets/brands/velora-nav.svg" alt="Velora Logo">
+        </a>
+
+        <button class="close-btn" aria-label="Close Menu">
+          <i class="fa-solid fa-xmark"></i>
         </button>
 
-        <div class="menu-panel">
+      </div>
 
-          <i class="fa-solid fa-xmark close-menu"></i>
+      <ul class="mobile-links">
 
-          <div class="mobile-links">
-            <a href="#home">
-              <i class="fa-solid fa-house"></i>
-              HOME
-            </a>
+        <li>
+          <a href="#home">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+        </li>
 
-            <a href="#story">
-              <i class="fa-solid fa-book-open"></i>
-              OUR STORY
-            </a>
+        <li>
+          <a href="#story">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Our Story</span>
+          </a>
+        </li>
 
-            <a href="#menu-mobile">
-              <i class="fa-solid fa-utensils"></i>
-              MENU
-            </a>
+        <li>
+          <a href="#menu">
+            <i class="fa-solid fa-utensils"></i>
+            <span>Menu</span>
+          </a>
+        </li>
 
-            <a href="#reservations m">
-              <i class="fa-regular fa-calendar"></i>
-              RESERVATIONS
-            </a>
+        <li>
+          <a href="#reservation">
+            <i class="fa-regular fa-calendar"></i>
+            <span>Reservations</span>
+          </a>
+        </li>
 
-            <a href="#gallery">
-              <i class="fa-regular fa-image"></i>
-              GALLERY
-            </a>
+        <li>
+          <a href="#gallery">
+            <i class="fa-regular fa-image"></i>
+            <span>Gallery</span>
+          </a>
+        </li>
 
-            <a href="#contact">
-              <i class="fa-regular fa-envelope"></i>
-              CONTACT
-            </a>
-          </div>
+        <li>
+          <a href="#contact">
+            <i class="fa-regular fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </li>
 
-          <a href="#menu-mobile" class="mobile-btn">
-            VIEW THE MENU
+      </ul>
+
+        <a href="#reservation" class="mobile-btn">
+          <i class="fa-regular fa-calendar"></i>
+          <span>Reserve A Table</span>
+        </a>
+
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="home-container">
+
+      <div class="home-content">
+
+        <h1 class="hero-title reveal">
+          <span>The Art Of</span>
+          <span>Halal Fine Dining</span>
+        </h1>
+
+        <p class="hero-description reveal delay-1">
+          Experience a premium restaurant website template designed for luxury dining
+          brands. This showcase demonstrates the design and user experience, ready to
+          be personalized with your restaurant's unique identity.
+        </p>
+
+        <div class="hero-buttons reveal delay-2">
+
+          <a href="#menu" class="btn-primary">
+            <i class="fa-solid fa-book-open"></i>
+            Explore Menu
+          </a>
+
+          <a href="#reservation" class="btn-secondary">
+            <i class="fa-regular fa-calendar"></i>
+            Reserve A Table
           </a>
 
         </div>
 
-      </div>
+        <div class="hero-features reveal delay-3">
+
+          <div class="feature-card">
+            <i class="fa-solid fa-certificate"></i>
+            <div>
+              <h3>100% Halal</h3>
+              <p>Certified & Trusted</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <i class="fa-solid fa-seedling"></i>
+            <div>
+              <h3>Premium Ingredients</h3>
+              <p>Fresh Daily Selection</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <i class="fa-solid fa-utensils"></i>
+            <div>
+              <h3>Master Crafted</h3>
+              <p>Luxury Culinary Experience</p>
+            </div>
+          </div>
 
-      <div class="nav-links">
-        <a href="#home">HOME</a>
-        <a href="#ourstory">OUR STORY</a>
-        <a href="#menu-mobile">MENU</a>
-        <a href="#reservations">RESERVATIONS</a>
-        <a href="#gallery">GALLERY</a>
-        <a href="#contact">CONTACT</a>
-      </div>
-
-      <a href="#menu-mobile" class="btn1">
-        VIEW THE MENU
-      </a>
-    </nav>
-
-    <div class="halal-badge">
-      <i data-lucide="leaf" class="icon"></i>
-      <div class="text">
-        <strong>100% HALAL</strong>
-        <small>PREMIUM INGREDIENTS</small>
-      </div>
-    </div>
-
-    <div class="home-content">
-      <img class="brand-02" src="assets/brands/brand.png" alt="">
-
-      <h3>Assalamu Alaikum wa Rahmatullahi wa Barakatuh</h3>
-
-      <p>
-        Luxury Restaurant Website Template ready for sale. Fully customizable to match any restaurant's identity, including branding, content, images, and booking features.
-      </p>
-
-      <a href="#reservations" class="btn2 a">
-        RESERVE YOUR TABLE <span>v</span>
-      </a>
-
-      <a href="#reservations m" class="btn2 b">
-        RESERVE YOUR TABLE <span>v</span>
-      </a>
-    </div>
-
-  </section>
-
-  <section class="features-bar" id="home">
-
-    <div class="feature">
-      <div class="icon-box">
-        <i data-lucide="utensils-crossed"></i>
-      </div>
-
-      <div class="feature-text">
-        <h3>FINE DINING</h3>
-        <p>EXPERIENCE</p>
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="feature">
-      <div class="icon-box">
-        <i data-lucide="chef-hat"></i>
-      </div>
-
-      <div class="feature-text">
-        <h3>PREMIUM</h3>
-        <p>INGREDIENTS</p>
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="feature">
-      <div class="icon-box">
-        <i class="fa-solid fa-bell-concierge"></i>
-      </div>
-
-      <div class="feature-text">
-        <h3>EXCEPTIONAL</h3>
-        <p>SERVICE</p>
-      </div>
-    </div>
-
-    <div class="socials">
-      <a href="#">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-
-      <a href="#">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-
-      <a href="#">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-    </div>
-
-  </section>
-
-  <div class="sec">
-    <img src="assets/brands/brand-03.png" alt="img" class="img">
-    <div class="ttl">• OUR STORY •</div>
-    <div class="ln"></div>
-  </div>
-
-  <section class="ourstory" id="ourstory">
-
-    <div class="story-content">
-
-      <span class="section-subtitle">OUR STORY</span>
-
-      <h1 class="story-title">
-        Project <br>
-        Concept
-      </h1>
-
-      <div class="story-line"></div>
-
-      <p class="story-text">
-        A restaurant concept website created to showcase modern Front-End and UI/UX design skills.
-      </p>
-
-      <p class="story-text">
-        This project can be fully customized with branding, content, and features to fit a future client's business needs, Insha'Allah.
-      </p>
-
-    <div class="features-story">
-
-      <div class="feature-box">
-        <i data-lucide="chef-hat"></i>
-
-        <h3>DESIGN CONCEPT</h3>
-
-        <p>
-          A visual concept designed to present a modern restaurant experience.
-        </p>
-      </div>
-
-      <div class="feature-box">
-        <i data-lucide="leaf"></i>
-
-        <h3>UI / UX DESIGN</h3>
-
-        <p>
-          Focused on elegant visuals, clean layouts, and smooth interactions.
-        </p>
-      </div>
-
-      <div class="feature-box">
-        <i class="fa-solid fa-bell-concierge"></i>
-
-        <h3>CUSTOMIZABLE</h3>
-
-        <p>
-          Branding, content, and features can be adapted for future clients, Insha'Allah.
-        </p>
-      </div>
-
-      <div class="feature-box">
-        <i data-lucide="heart"></i>
-
-        <h3>READY TO DEPLOY</h3>
-
-        <p>
-          Ready to be customized and adapted for a future business.
-        </p>
-      </div>
-
-    </div>
-
-      <blockquote class="story-quote">
-        “Created to turn a creative concept into a professional client project, Insha'Allah.”
-      </blockquote>
-
-    </div>
-
-  </section>
-
-  <div class="ourstory2"></div>
-
-  <!-- mobile-section -->
-
-  <section class="story-mobile" id="story">
-
-    <div class="cover">
-      <img src="assets/restaurant/story.png" alt="">
-      <div class="intro">
-        <h2>OUR STORY</h2>
-        <p>A Passion for Culinary Excellence</p>
-      </div>
-    </div>
-
-    <div class="grid">
-
-      <div class="txt">
-        <h3>Concept Presentation</h3>
-
-        <p>
-          This project showcases the visual identity and UI/UX design of Veltra as a conceptual fine dining experience.
-        </p>
-
-        <p>
-          It is not a real restaurant or operational business, but a design case study focused on branding, user experience, and interface design.
-        </p>
-      </div>
-
-      <img src="assets/restaurant/story2.png" alt="" class="img h">
-
-      <img src="assets/restaurant/story3.png" alt="" class="img h">
-
-    </div>
-
-  </section>
-
-  <div class="sec">
-    <img src="assets/brands/brand-03.png" alt="img" class="img">
-    <div class="ttl">• MENU •</div>
-    <div class="ln"></div>
-  </div>
-
-  <div class="menu-note">
-    <p>
-      This menu is presented as part of a restaurant concept project.
-      Items and pricing may be customized for future client needs, Insha'Allah.
-    </p>
-  </div>
-
-  <section class="menu-mobile" id="menu-mobile">
-
-    <div class="menu-header">
-      <h2>MENU</h2>
-
-      <div class="menu-divider">
-        <span></span>
-        <div class="diamond"></div>
-        <span></span>
-      </div>
-    </div>
-
-    <div class="menu-categories">
-      <button class="active" data-category="starters">
-        <i data-lucide="leaf"></i>
-        <span>STARTERS</span>
-      </button>
-
-      <button data-category="main">
-        <i data-lucide="utensils"></i>
-        <span>MAIN COURSES</span>
-      </button>
-
-      <button data-category="signature">
-        <i data-lucide="chef-hat"></i>
-        <span>SIGNATURE</span>
-      </button>
-
-      <button data-category="desserts">
-        <i data-lucide="cake-slice"></i>
-        <span>DESSERTS</span>
-      </button>
-
-      <button data-category="drinks">
-        <i data-lucide="cup-soda"></i>
-        <span>DRINKS</span>
-      </button>
-    </div>
-
-    <div class="menu-category-title"></div>
-
-    <div class="menu-list"></div>
-
-    <div id="toast" class="toast"></div>
-
-  </section>
-
-  <div class="sec">
-    <img src="assets/brands/brand-03.png" alt="img" class="img">
-    <div class="ttl">• RESERVATIONS •</div>
-    <div class="ln"></div>
-  </div>
-
-  <section class="reservation" id="reservations">
-
-    <div class="reservation-left">
-
-      <span class="reservation-subtitle">RESERVATIONS</span>
-
-      <h1 class="reservation-title">
-      Reservation <br>
-      Experience
-      </h1>
-
-      <div class="reservation-line"></div>
-
-      <p class="reservation-text">
-        This reservation section was created to demonstrate a modern booking experience. It is not connected to a live reservation system.
-      </p>
-
-  <div class="reservation-features">
-
-    <div class="feature-box">
-      <i class="fa-solid fa-award"></i>
-        
-      <div>
-        <h3>100% HALAL</h3>
-
-        <p>
-          Designed around halal dining values for future client projects, Insha'Allah.
-        </p>
-      </div>
-    </div>
-
-    <div class="feature-box">
-      <i class="fa-solid fa-leaf"></i>
-
-      <div>
-        <h3>FRESH INGREDIENTS</h3>
-
-        <p>
-          A concept focused on quality ingredients and a premium dining experience.
-        </p>
-      </div>
-    </div>
-
-    <div class="feature-box">
-      <i class="fa-solid fa-bell-concierge"></i>
-
-      <div>
-        <h3>EXCEPTIONAL SERVICE</h3>
-
-        <p>
-          Designed to reflect an elegant and professional customer experience.
-        </p>
-      </div>
-    </div>
-
-    <div class="feature-box">
-      <i class="fa-regular fa-heart"></i>
-
-      <div>
-        <h3>MEMORABLE MOMENTS</h3>
-
-        <p>
-          Created to inspire a welcoming atmosphere for families and special events.
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="reservation-note">
-
-    <i class="fa-regular fa-calendar"></i>
-
-    <div>
-
-      <h4>BOOKING PREVIEW</h4>
-
-      <p>
-        Reservation features can be customized and integrated for future client projects, Insha'Allah.
-      </p>
-
-    </div>
-
-  </div>
-
-  </section>
-
-  <h1 class="reservation-ti">
-    Reservations
-  </h1>
-
-  <img class="res-img" src="assets/restaurant/res.mobile.png" alt="">
-
-  <div class="txt">
-    <h3>Reservations</h3>
-
-    <p>
-      This reservation section is displayed as part of the Veltra concept presentation.
-    </p>
-
-    <p>
-      Reservation services are not currently available. Future availability and operational details will be determined by the project's future owner.
-    </p>
-  </div>
-
-  <section class="reservation-center" id="reservations m">
-
-    <form class="reservation-form">
-
-      <h2>BOOKING PREVIEW</h2>
-
-      <p>A modern reservation experience created for this portfolio project.</p>
-
-      <div class="input-box">
-        <label>FULL NAME</label>
-        <input type="text" placeholder="Enter your full name">
-      </div>
-
-      <div class="input-box">
-        <label>PHONE NUMBER</label>
-        <input type="text" placeholder="Enter your phone number">
-      </div>
-
-      <div class="input-box">
-        <label>EMAIL ADDRESS</label>
-        <input type="email" placeholder="Enter your email address">
-      </div>
-
-      <div class="double-input">
-
-        <div class="input-box">
-          <label>DATE</label>
-          <input type="date">
-        </div>
-
-        <div class="input-box">
-          <label>TIME</label>
-          <input type="time">
         </div>
 
       </div>
 
-      <div class="input-box">
-        <label>GUESTS</label>
-        
-      <select class="reservation-select">
-        <option>Number of guests</option>
-        <option>1 Guest</option>
-        <option>2 Guests</option>
-        <option>3 Guests</option>
-        <option>4 Guests</option>
-        <option>5+ Guests</option>
-      </select>
-      </div>
+      <div class="home-image reveal delay-2">
 
-      <div class="input-box">
-        <label>OCCASION (OPTIONAL)</label>
-
-        <input
-          type="text"
-          placeholder="Birthday, Anniversary, Business Dinner..."
-        >
-      </div>
-
-      <div class="input-box">
-        <label>SELECTED ITEM</label>
-        <input type="text" id="selectedItem" readonly placeholder="No item selected">
-      </div>
-
-      <div class="input-box">
-        <label>SPECIAL REQUESTS (OPTIONAL)</label>
-
-        <textarea
-          placeholder="Any special requests or preferences?"
-        ></textarea>
-      </div>
-
-      <button type="button" class="reserve-btn">
-        RESERVE NOW
-      </button>
-
-      <span class="form-note">
-        Reservation functionality is disabled in this portfolio project and can be customized for future client projects, Insha'Allah.
-      </span>
-      
-    </form>
-
-  </section>
-
-  <div class="sec a">
-    <img src="assets/brands/brand-03.png" alt="img" class="img">
-    <div class="ttl">• GALLERY •</div>
-    <div class="ln"></div>
-  </div>
-
-  <section class="gallery" id="gallery">
-
-    <div class="gallery-content">
-
-      <span class="gallery-subtitle">GALLERY</span>
-
-      <h1 class="gallery-title">
-        Gallery Preview
-      </h1>
-
-      <div class="gallery-line"></div>
-
-      <p class="gallery-text">
-        This gallery showcases AI-generated images used to present the visual concept of this portfolio project. They are included for design and presentation purposes only.
-      </p>
-
-    </div>
-
-    <div class="gallery-grid">
-
-      <div class="gallery-item large">
-        <img src="assets/gallery/gallery1.png" alt="">
-        <div class="overlay">
-          <h3>VELTRA Restaurant</h3>
+        <div class="image-wrapper">
+          <img src="assets/restaurant/velora-home.webp" alt="Premium Halal Dish">
         </div>
-      </div>
 
-      <div class="gallery-item">
-        <img src="assets/gallery/gallery2.png" alt="">
-        <div class="overlay">
-          <h3>Special Dish</h3>
-        </div>
-      </div>
+        <div class="halal-card reveal delay-5">
 
-      <div class="gallery-item">
-        <img src="assets/gallery/gallery3.png" alt="">
-        <div class="overlay">
-          <h3>Fresh Drink</h3>
-        </div>
-      </div>
+          <i class="fa-solid fa-shield-halved"></i>
 
-      <div class="gallery-item">
-        <img src="assets/gallery/gallery4.png" alt="">
-        <div class="overlay">
-          <h3>Luxury Dessert</h3>
-        </div>
-      </div>
+          <div>
+            <h3>100% HALAL</h3>
+            <p>Premium Quality</p>
+          </div>
 
-      <div class="gallery-item">
-        <img src="assets/gallery/gallery5.png" alt="">
-        <div class="overlay">
-          <h3>Golden Ambience</h3>
         </div>
-      </div>
 
-      <div class="gallery-item">
-        <img src="assets/gallery/gallery6.png" alt="">
-        <div class="overlay">
-          <h3>Arabic Taste</h3>
-        </div>
-      </div>
-
-      <div class="gallery-item tall">
-        <img src="assets/gallery/gallery7.png" alt="">
-        <div class="overlay">
-          <h3>Elegant Entrance</h3>
-        </div>
       </div>
 
     </div>
     
   </section>
 
-  <div class="sec b">
-    <img src="assets/brands/brand-03.png" alt="img" class="img">
-    <div class="ttl">• CONTACT •</div>
-    <div class="ln"></div>
+  <div class="section-divider">
+
+    <div class="divider-line"></div>
+    <div class="divider-logo">
+      <span></span>
+      <img
+        src="assets/brands/velora-nav.svg"
+        alt="Velora Logo"
+      >
+    </div>
+    <div class="divider-line"></div>
+
+  </div>
+
+  <section class="ourstory" id="story">
+
+    <div class="container">
+
+      <div class="story-top">
+
+        <div class="story-content story-reveal delay-1">
+
+          <span class="story-badge">
+            <i class="fa-solid fa-book-open"></i>
+            OUR STORY
+          </span>
+
+          <h2 class="story-title">
+            <span>A Passion For</span>
+            <span>Excellence</span>
+            <span>And Purity</span>
+          </h2>
+
+          <p class="story-description">
+            This is sample content created exclusively to showcase the design and
+            presentation of the Velora template. Every element, including the story,
+            images, dates, and branding, is fully customizable and will be replaced
+            with your restaurant's own identity when the website is tailored for you.
+          </p>
+
+          <div class="story-features">
+
+            <div class="story-feature">
+              <i class="fa-solid fa-shield-halved"></i>
+
+              <div>
+                <h4>100% Halal</h4>
+                <p>Certified Ingredients</p>
+              </div>
+            </div>
+
+            <div class="story-feature">
+              <i class="fa-solid fa-award"></i>
+
+              <div>
+                <h4>Premium Quality</h4>
+                <p>Luxury Standards</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="story-signature">
+
+            <h3>Restaurant Owner</h3>
+
+            <span>Founder & Executive Chef</span>
+
+          </div>
+
+          <a href="#gallery" class="story-btn">
+
+            <span class="play-icon">
+              <i class="fa-solid fa-play"></i>
+            </span>
+
+            <div>
+
+              <strong>Your Story Here</strong>
+              <small>Fully Customizable</small>
+
+            </div>
+
+          </a>
+
+        </div>
+
+        <div class="story-image story-reveal delay-2">
+
+          <div class="image-frame">
+
+            <img
+              src="assets/restaurant/story.webp"
+              alt="Luxury Restaurant Interior"
+            >
+
+          </div>
+
+          <div class="experience-card">
+
+            <span>Since</span>
+
+            <h3>2021</h3>
+
+            <p>Crafting Exceptional Halal Dining</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="story-journey story-reveal delay-3">
+
+      <div class="journey-left">
+
+        <span class="journey-badge">
+          <i class="fa-solid fa-compass"></i>
+          OUR JOURNEY
+        </span>
+
+        <h3>
+          From Vision To
+          <span>Luxury Dining</span>
+        </h3>
+
+        <p>
+          This timeline showcases the restaurant's journey and milestones.
+          Replace these demo details with your own brand story to create a
+          memorable experience for your guests.
+        </p>
+
+        <a href="#menu" class="journey-btn">
+          Explore Our Menu
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="journey-right">
+
+        <div class="timeline">
+
+          <div class="timeline-item active">
+
+            <div class="timeline-icon">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+
+            <span class="timeline-year">2018</span>
+
+            <h4>The Beginning</h4>
+
+            <p>
+              Started with a vision to redefine premium halal dining.
+            </p>
+
+          </div>
+
+          <div class="timeline-item">
+
+            <div class="timeline-icon">
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <span class="timeline-year">2019</span>
+
+            <h4>First Restaurant</h4>
+
+            <p>
+              Welcomed our first guests with exceptional hospitality.
+            </p>
+
+          </div>
+
+          <div class="timeline-item">
+
+            <div class="timeline-icon">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+
+            <span class="timeline-year">2021</span>
+
+            <h4>Growing Passion</h4>
+
+            <p>
+              Expanded the menu while maintaining the highest quality.
+            </p>
+
+          </div>
+
+          <div class="timeline-item">
+
+            <div class="timeline-icon">
+              <i class="fa-regular fa-gem"></i>
+            </div>
+
+            <span class="timeline-year">2023</span>
+
+            <h4>Looking Ahead</h4>
+
+            <p>
+              Continuing to craft unforgettable halal dining experiences.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="story-stats story-reveal delay-4">
+
+      <div class="story-stat">
+
+        <div class="stat-icon">
+          <i class="fa-solid fa-bell-concierge"></i>
+        </div>
+
+        <div class="stat-content">
+          <h3>5+</h3>
+          <span>Years Of Passion</span>
+        </div>
+
+      </div>
+
+      <div class="story-stat">
+
+        <div class="stat-icon">
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+
+        <div class="stat-content">
+          <h3>50+</h3>
+          <span>Signature Dishes</span>
+        </div>
+
+      </div>
+
+      <div class="story-stat">
+
+        <div class="stat-icon">
+          <i class="fa-solid fa-users"></i>
+        </div>
+
+        <div class="stat-content">
+          <h3>10K+</h3>
+          <span>Happy Guests</span>
+        </div>
+
+      </div>
+
+      <div class="story-stat">
+
+        <div class="stat-icon">
+          <i class="fa-solid fa-award"></i>
+        </div>
+
+        <div class="stat-content">
+          <h3>100%</h3>
+          <span>Halal Certified</span>
+        </div>
+
+      </div>
+
+      <div class="story-stat">
+
+        <div class="stat-icon">
+          <i class="fa-regular fa-gem"></i>
+        </div>
+
+        <div class="stat-content">
+          <h3>1</h3>
+          <span>Mission</span>
+          <small>Excellence & Purity</small>
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+  </section>
+
+  <div class="section-divider">
+
+    <div class="divider-line"></div>
+    <div class="divider-logo">
+      <span></span>
+      <img
+        src="assets/brands/velora-nav.svg"
+        alt="Velora Logo"
+      >
+    </div>
+    <div class="divider-line"></div>
+
+  </div>
+
+  <section class="menu" id="menu">
+
+    <div class="container">
+
+      <div class="menu-header menu-reveal">
+
+        <span class="menu-badge">
+          <i class="fa-solid fa-utensils"></i>
+          OUR MENU
+        </span>
+
+        <h2 class="menu-title">
+          <span>Authentic</span>
+          <span>Arabic Cuisine</span>
+          <span>Crafted With Passion</span>
+        </h2>
+
+        <p class="menu-description">
+          This menu is provided as sample content to demonstrate the design
+          and presentation of the Velora template. Every category, dish,
+          image, ingredient, and price can be fully customized to match your
+          restaurant and brand.
+        </p>
+
+        <div class="menu-highlights">
+
+          <div class="menu-highlight">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <div>
+              <h4>100% Halal</h4>
+              <p>Certified Ingredients</p>
+            </div>
+
+          </div>
+
+          <div class="menu-highlight">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <div>
+              <h4>Fresh Daily</h4>
+              <p>Premium Ingredients</p>
+            </div>
+
+          </div>
+
+          <div class="menu-highlight">
+
+            <i class="fa-solid fa-award"></i>
+
+            <div>
+              <h4>Luxury Quality</h4>
+              <p>Crafted With Care</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="menu-categories menu-reveal">
+
+        <button class="category-btn active"  data-category="all">
+
+          <i class="fa-solid fa-border-all"></i>
+
+          <span>All Dishes</span>
+
+        </button>
+
+        <button class="category-btn" data-category="appetizers">
+
+          <i class="fa-solid fa-bowl-food"></i>
+
+          <span>Appetizers</span>
+
+        </button>
+
+        <button class="category-btn" data-category="main">
+
+          <i class="fa-solid fa-drumstick-bite"></i>
+
+          <span>Main Courses</span>
+
+        </button>
+
+        <button class="category-btn" data-category="grill">
+
+          <i class="fa-solid fa-fire-flame-curved"></i>
+
+          <span>Grill</span>
+
+        </button>
+
+        <button class="category-btn" data-category="sides">
+
+          <i class="fa-solid fa-cheese"></i>
+
+          <span>Sides</span>
+
+        </button>
+
+        <button class="category-btn" data-category="desserts">
+
+          <i class="fa-solid fa-cake-candles"></i>
+
+          <span>Desserts</span>
+
+        </button>
+
+        <button class="category-btn" data-category="drinks">
+
+          <i class="fa-solid fa-glass-water"></i>
+
+          <span>Drinks</span>
+
+        </button>
+
+      </div>
+
+      <div class="menu-grid">
+
+        <!-- Appetizers -->
+
+        <div class="menu-card menu-reveal" data-category="appetizers">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/mezza.webp"
+              alt="Arabic Mezza"
+            >
+
+            <span class="menu-tag">
+              Fresh Daily
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Arabic Mezza</h3>
+
+              <span>$16</span>
+
+            </div>
+
+            <p>
+              Hummus, moutabal, tabbouleh, vine leaves,
+              olives and warm freshly baked Arabic bread.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-leaf"></i>
+                Fresh
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="appetizers">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/hummus.webp"
+              alt="Hummus Deluxe"
+            >
+
+            <span class="menu-tag">
+              Signature
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Hummus Deluxe</h3>
+
+              <span>$12</span>
+
+            </div>
+
+            <p>
+              Creamy homemade hummus topped with olive oil,
+              chickpeas, parsley and warm Arabic bread.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-seedling"></i>
+                Healthy
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="appetizers">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/vine-leaves.webp"
+              alt="Stuffed Vine Leaves"
+            >
+
+            <span class="menu-tag">
+              Traditional
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Stuffed Vine Leaves</h3>
+
+              <span>$14</span>
+
+            </div>
+
+            <p>
+              Tender vine leaves filled with seasoned rice,
+              herbs and authentic Middle Eastern flavors.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-leaf"></i>
+                Vegetarian
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="appetizers">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/falafel.webp"
+              alt="Falafel Platter"
+            >
+
+            <span class="menu-tag">
+              Popular
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Falafel Platter</h3>
+
+              <span>$15</span>
+
+            </div>
+
+            <p>
+              Crispy golden falafel served with tahini sauce,
+              fresh vegetables and Arabic bread.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-fire"></i>
+                Crispy
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Main Courses -->
+
+        <div class="menu-card" data-category="main">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/mandi.webp"
+              alt="Chicken Mandi"
+            >
+
+            <span class="menu-tag">
+              Best Seller
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Chicken Mandi</h3>
+
+              <span>$24</span>
+
+            </div>
+
+            <p>
+              Slow-cooked halal chicken with fragrant basmati rice,
+              roasted nuts and authentic Arabic spices.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-pepper-hot"></i>
+                Medium
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="main">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/lamb-kabsa.webp"
+              alt="Lamb Kabsa"
+            >
+
+            <span class="menu-tag">
+              Signature
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Lamb Kabsa</h3>
+
+              <span>$30</span>
+
+            </div>
+
+            <p>
+              Tender halal lamb served over aromatic kabsa rice
+              with traditional Gulf spices.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-star"></i>
+                Premium
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="main">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/chicken-kabsa.webp"
+              alt="Chicken Kabsa"
+            >
+
+            <span class="menu-tag">
+              Chef's Choice
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Chicken Kabsa</h3>
+
+              <span>$25</span>
+
+            </div>
+
+            <p>
+              Juicy roasted halal chicken served with flavorful
+              kabsa rice and roasted vegetables.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-fire"></i>
+                Fresh
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="main">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/ouzi.webp"
+              alt="Lamb Ouzi"
+            >
+
+            <span class="menu-tag">
+              Premium
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Lamb Ouzi</h3>
+
+              <span>$34</span>
+
+            </div>
+
+            <p>
+              Slow-roasted halal lamb with fragrant rice,
+              raisins, almonds and aromatic spices.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-award"></i>
+                Signature
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+          <!-- Grill -->
+
+        <div class="menu-card" data-category="grill">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/mixed-grill.webp"
+              alt="Mixed Grill Platter"
+            >
+
+            <span class="menu-tag">
+              Chef's Choice
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Mixed Grill Platter</h3>
+
+              <span>$32</span>
+
+            </div>
+
+            <p>
+              Premium halal lamb chops, chicken kebab, kofta,
+              grilled vegetables and freshly baked Arabic bread.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-fire"></i>
+                Grill
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="grill">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/shish-tawook.webp"
+              alt="Shish Tawook"
+            >
+
+            <span class="menu-tag">
+              Best Seller
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Shish Tawook</h3>
+
+              <span>$27</span>
+
+            </div>
+
+            <p>
+              Tender marinated halal chicken skewers served with
+              garlic sauce, grilled vegetables and rice.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-fire"></i>
+                Charcoal Grill
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="grill">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/kofta-kebab.webp"
+              alt="Kofta Kebab"
+            >
+
+            <span class="menu-tag">
+              Popular
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Kofta Kebab</h3>
+
+              <span>$28</span>
+
+            </div>
+
+            <p>
+              Juicy halal minced lamb kebab grilled over charcoal,
+              served with tahini and Arabic bread.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-fire"></i>
+                Grilled
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="grill">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/lamb-chops.webp"
+              alt="Grilled Lamb Chops"
+            >
+
+            <span class="menu-tag">
+              Premium
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Grilled Lamb Chops</h3>
+
+              <span>$36</span>
+
+            </div>
+
+            <p>
+              Premium halal lamb chops grilled to perfection,
+              served with vegetables and saffron rice.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-award"></i>
+                Signature
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Sides -->
+
+        <div class="menu-card" data-category="sides">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/saffron-rice.webp"
+              alt="Saffron Rice"
+            >
+
+            <span class="menu-tag">
+              Traditional
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Saffron Rice</h3>
+
+              <span>$8</span>
+
+            </div>
+
+            <p>
+              Aromatic basmati rice infused with premium saffron,
+              butter and Middle Eastern spices.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-bowl-rice"></i>
+                Fresh
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="sides">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/arabic-bread.webp"
+              alt="Arabic Bread Basket"
+            >
+
+            <span class="menu-tag">
+              Fresh Baked
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Arabic Bread Basket</h3>
+
+              <span>$6</span>
+
+            </div>
+
+            <p>
+              Freshly baked Arabic bread served warm with
+              premium olive oil and herbs.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-wheat-awn"></i>
+                Homemade
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="sides">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/grilled-vegetables.webp"
+              alt="Grilled Vegetables"
+            >
+
+            <span class="menu-tag">
+              Healthy
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Grilled Vegetables</h3>
+
+              <span>$9</span>
+
+            </div>
+
+            <p>
+              Seasonal vegetables grilled over charcoal with
+              herbs and extra virgin olive oil.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-leaf"></i>
+                Healthy
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="sides">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/fries.webp"
+              alt="Crispy French Fries"
+            >
+
+            <span class="menu-tag">
+              Favorite
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Crispy French Fries</h3>
+
+              <span>$7</span>
+
+            </div>
+
+            <p>
+              Golden crispy fries seasoned with sea salt
+              and served with homemade sauces.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-fire"></i>
+                Crispy
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+          <!-- Desserts -->
+
+        <div class="menu-card" data-category="desserts">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/kunafa.webp"
+              alt="Kunafa"
+            >
+
+            <span class="menu-tag">
+              Best Seller
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Kunafa</h3>
+
+              <span>$12</span>
+
+            </div>
+
+            <p>
+              Crispy golden kunafa filled with premium cheese,
+              topped with pistachios and sweet syrup.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-cake-candles"></i>
+                Sweet
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="desserts">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/baklava.webp"
+              alt="Baklava Selection"
+            >
+
+            <span class="menu-tag">
+              Traditional
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Baklava Selection</h3>
+
+              <span>$10</span>
+
+            </div>
+
+            <p>
+              Assorted handmade baklava with pistachios,
+              walnuts and delicate layers of pastry.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-star"></i>
+                Handmade
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="desserts">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/umm-ali.webp"
+              alt="Umm Ali"
+            >
+
+            <span class="menu-tag">
+              Chef's Choice
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Umm Ali</h3>
+
+              <span>$11</span>
+
+            </div>
+
+            <p>
+              Warm traditional Umm Ali with puff pastry,
+              fresh cream, raisins and roasted nuts.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-heart"></i>
+                Homemade
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="desserts">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/date-cake.webp"
+              alt="Date Cake"
+            >
+
+            <span class="menu-tag">
+              Fresh Daily
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Date Cake</h3>
+
+              <span>$9</span>
+
+            </div>
+
+            <p>
+              Soft date cake served with caramel sauce
+              and roasted almonds.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-cookie-bite"></i>
+                Fresh
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Drinks -->
+
+        <div class="menu-card" data-category="drinks">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/lemon-mint.webp"
+              alt="Fresh Lemon Mint"
+            >
+
+            <span class="menu-tag">
+              Refreshing
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Fresh Lemon Mint</h3>
+
+              <span>$7</span>
+
+            </div>
+
+            <p>
+              Freshly squeezed lemon blended with mint
+              leaves and crushed ice.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-glass-water"></i>
+                Fresh Juice
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="drinks">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/apple-juice.webp"
+              alt="Fresh Apple Juice"
+            >
+
+            <span class="menu-tag">
+              Natural
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Fresh Apple Juice</h3>
+
+              <span>$7</span>
+
+            </div>
+
+            <p>
+              Pure freshly pressed apples served chilled
+              without artificial ingredients.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-apple-whole"></i>
+                Natural
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="drinks">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/banana-juice.webp"
+              alt="Fresh Banana Juice"
+            >
+
+            <span class="menu-tag">
+              Creamy
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Fresh Banana Juice</h3>
+
+              <span>$8</span>
+
+            </div>
+
+            <p>
+              Creamy banana juice blended with fresh milk
+              and premium honey.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-glass-water"></i>
+                Fresh Juice
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu-card" data-category="drinks">
+
+          <div class="menu-image">
+
+            <img
+              src="assets/menu/orange-juice.webp"
+              alt="Fresh Orange Juice"
+            >
+
+            <span class="menu-tag">
+              Vitamin C
+            </span>
+
+          </div>
+
+          <div class="menu-content">
+
+            <div class="menu-heading">
+
+              <h3>Fresh Orange Juice</h3>
+
+              <span>$7</span>
+
+            </div>
+
+            <p>
+              Freshly squeezed oranges served cold with
+              natural sweetness and vibrant flavor.
+            </p>
+
+            <div class="menu-meta">
+
+              <span>
+                <i class="fa-solid fa-glass-water"></i>
+                Fresh Juice
+              </span>
+
+              <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                100% Halal
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      </div>
+
+      <div class="menu-bottom menu-reveal">
+
+        <div class="menu-banner">
+
+          <div class="banner-content">
+
+            <span class="banner-badge">
+              <i class="fa-solid fa-crown"></i>
+              PREMIUM DINING
+            </span>
+
+            <h3>
+              Every Dish Is Crafted
+              <span>With Passion & Excellence</span>
+            </h3>
+
+            <p>
+              This menu is provided as demonstration content for the
+              Velora restaurant template. Every dish, image, category,
+              description and price can be fully customized to match
+              your restaurant.
+            </p>
+
+            <div class="banner-features">
+
+              <div class="banner-feature">
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <div>
+                  <strong>100% Halal</strong>
+                  <small>Certified Ingredients</small>
+                </div>
+              </div>
+
+              <div class="banner-feature">
+                <i class="fa-solid fa-seedling"></i>
+
+                <div>
+                  <strong>Fresh Daily</strong>
+                  <small>Premium Quality</small>
+                </div>
+              </div>
+
+              <div class="banner-feature">
+                <i class="fa-solid fa-utensils"></i>
+
+                <div>
+                  <strong>Luxury Dining</strong>
+                  <small>Elegant Experience</small>
+                </div>
+              </div>
+
+            </div>
+
+            <a href="#reservation" class="menu-btn">
+
+              Reserve A Table
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+          </div>
+
+          <div class="banner-image">
+
+            <img
+              src="assets/restaurant/reservation.webp"
+              alt="Luxury Arabic Halal Dining"
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="section-divider">
+
+    <div class="divider-line"></div>
+    <div class="divider-logo">
+      <span></span>
+      <img
+        src="assets/brands/velora-nav.svg"
+        alt="Velora Logo"
+      >
+    </div>
+    <div class="divider-line"></div>
+
+  </div>
+
+  <section class="reservations" id="reservation">
+
+    <div class="container">
+
+      <div class="reservation-main">
+
+        <!-- Reservation Visual -->
+
+        <div class="reservation-visual reveal">
+
+          <div class="reservation-image">
+
+            <img
+              src="assets/restaurant/reservation.webp"
+              alt="Luxury Arabic Halal Dining Experience"
+            >
+
+            <div class="reservation-overlay"></div>
+
+            <div class="reservation-visual-content">
+
+              <span class="badge">
+                <i class="fa-regular fa-calendar"></i>
+                RESERVE YOUR EXPERIENCE
+              </span>
+
+              <h1>
+                A Table
+                <span>For You</span>
+              </h1>
+
+              <div class="reservation-divider">
+                <span></span>
+                <i class="fa-solid fa-diamond"></i>
+                <span></span>
+              </div>
+
+              <p>
+                Good food brings people together.
+                Reserve your table and let us take care of the rest.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Reservation Form -->
+
+        <div class="reservation-form-card reveal delay-1">
+
+          <div class="reservation-header">
+
+            <span class="section-label">
+              <i class="fa-solid fa-diamond"></i>
+              BOOK YOUR TABLE
+              <i class="fa-solid fa-diamond"></i>
+            </span>
+
+            <h2>
+              Make A
+              <span>Reservation</span>
+            </h2>
+
+            <p>
+              Please fill in the details below and we'll do our best
+              to confirm your reservation.
+            </p>
+
+          </div>
+
+
+          <form class="reservation-form">
+
+            <div class="form-row">
+
+              <div class="form-group">
+
+                <label for="reservation-name">
+                  <i class="fa-regular fa-user"></i>
+                  Your Name
+                </label>
+
+                <input
+                  type="text"
+                  id="reservation-name"
+                  name="name"
+                  placeholder="Enter your name"
+                  autocomplete="name"
+                  required
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="reservation-email">
+                  <i class="fa-regular fa-envelope"></i>
+                  Email Address
+                </label>
+
+                <input
+                  type="email"
+                  id="reservation-email"
+                  name="email"
+                  placeholder="Enter your email"
+                  autocomplete="email"
+                  required
+                >
+
+              </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+              <div class="form-group">
+
+                <label for="reservation-phone">
+                  <i class="fa-solid fa-phone"></i>
+                  Phone Number
+                </label>
+
+                <input
+                  type="tel"
+                  id="reservation-phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  autocomplete="tel"
+                  required
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="reservation-date">
+                  <i class="fa-regular fa-calendar"></i>
+                  Date
+                </label>
+
+                <input
+                  type="date"
+                  id="reservation-date"
+                  name="date"
+                  required
+                >
+
+              </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+              <div class="form-group">
+
+                <label for="reservation-time">
+                  <i class="fa-regular fa-clock"></i>
+                  Time
+                </label>
+
+                <select
+                  id="reservation-time"
+                  name="time"
+                  required
+                >
+
+                  <option value="" selected disabled>
+                    Select time
+                  </option>
+
+                  <option value="12:00">12:00 PM</option>
+                  <option value="13:00">1:00 PM</option>
+                  <option value="14:00">2:00 PM</option>
+                  <option value="15:00">3:00 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="21:00">9:00 PM</option>
+                  <option value="22:00">10:00 PM</option>
+
+                </select>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="reservation-guests">
+                  <i class="fa-solid fa-users"></i>
+                  Guests
+                </label>
+
+                <select
+                  id="reservation-guests"
+                  name="guests"
+                  required
+                >
+
+                  <option value="" selected disabled>
+                    Select number of guests
+                  </option>
+
+                  <option value="1">1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="7">7 Guests</option>
+                  <option value="8">8 Guests</option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+
+            <div class="form-group form-group-full">
+
+              <label for="reservation-message">
+                <i class="fa-regular fa-note-sticky"></i>
+                Special Requests
+                <span>(Optional)</span>
+              </label>
+
+              <textarea
+                id="reservation-message"
+                name="message"
+                rows="4"
+                placeholder="Any special requests or preferences?"
+              ></textarea>
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="reservation-submit"
+            >
+
+              <span>Confirm Reservation</span>
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+            <div class="reservation-security">
+
+              <i class="fa-solid fa-shield-halved"></i>
+
+              <span>
+                Your reservation request is secure and will be
+                reviewed by our team.
+              </span>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+
+      <!-- Reservation Information -->
+
+      <div class="reservation-info reveal delay-2">
+
+        <div class="reservation-info-item">
+
+          <div class="reservation-info-icon">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+
+          <div class="reservation-info-content">
+
+            <span>Opening Hours</span>
+
+            <p>
+              Mon – Sun<br>
+              12:00 PM – 11:00 PM
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="reservation-info-item">
+
+          <div class="reservation-info-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+
+          <div class="reservation-info-content">
+
+            <span>Location</span>
+
+            <p>
+              Riyadh, Saudi Arabia
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="reservation-info-item">
+
+          <div class="reservation-info-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+
+          <div class="reservation-info-content">
+
+            <span>Phone</span>
+
+            <p>
+              +966 00 000 000
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="reservation-info-item">
+
+          <div class="reservation-info-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+
+          <div class="reservation-info-content">
+
+            <span>100% Halal</span>
+
+            <p>
+              All our food is 100% Halal<br>
+              and ethically sourced.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="reservation-info-item">
+
+          <div class="reservation-info-icon">
+            <i class="fa-solid fa-square-parking"></i>
+          </div>
+
+          <div class="reservation-info-content">
+
+            <span>Parking</span>
+
+            <p>
+              Valet parking<br>
+              available
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Special Events -->
+
+      <div class="reservation-event reveal delay-3">
+
+        <div class="event-icon">
+          <i class="fa-solid fa-star-and-crescent"></i>
+        </div>
+
+        <div class="event-content">
+
+          <span>
+            PLAN A SPECIAL EVENT?
+          </span>
+
+          <p>
+            We offer private dining,
+            graduations, and family celebrations.
+          </p>
+
+        </div>
+
+
+        <a
+          href="#contact"
+          class="event-btn"
+        >
+
+          <span>Contact Us</span>
+
+          <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="section-divider">
+
+    <div class="divider-line"></div>
+    <div class="divider-logo">
+      <span></span>
+      <img
+        src="assets/brands/velora-nav.svg"
+        alt="Velora Logo"
+      >
+    </div>
+    <div class="divider-line"></div>
+
+  </div>
+
+  <section class="gallery" id="gallery">
+
+    <div class="container">
+
+      <div class="gallery-header gallery-reveal">
+
+        <span class="section-label">
+          <i class="fa-regular fa-image"></i>
+          OUR GALLERY
+        </span>
+
+        <h1>
+          A Glimpse Into
+          <span>Velora</span>
+        </h1>
+
+        <p>
+          These images are AI-generated samples used only to showcase the 
+          template design, and will be replaced with real photos of your 
+          restaurant during customization.
+        </p>
+
+      </div>
+
+      <div class="gallery-featured gallery-featured-reveal">
+
+        <div class="gallery-featured-image">
+
+          <img
+            src="assets/gallery/gallery-main.webp"
+            alt="Luxury Arabic Halal Dining at Velora"
+          >
+
+          <div class="gallery-image-overlay"></div>
+
+          <div class="gallery-featured-content">
+
+            <span>
+              <i class="fa-solid fa-sparkles"></i>
+              THE VELORA EXPERIENCE
+            </span>
+
+            <h2>
+              Where Every
+              <strong>Moment Matters</strong>
+            </h2>
+
+            <p>
+              Discover an unforgettable dining experience surrounded
+              by warm lights and authentic details.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-card gallery-card-large gallery-card-reveal gallery-delay-1">
+
+          <img
+            src="assets/gallery/gallery-interior.webp"
+            alt="Velora Luxury Restaurant Interior"
+          >
+
+          <div class="gallery-card-overlay"></div>
+
+          <div class="gallery-card-content">
+
+            <span>01</span>
+
+            <h3>
+              The Interior
+            </h3>
+
+            <p>
+              A refined space inspired by Arabic architecture.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-card gallery-card-reveal gallery-delay-2">
+
+          <img
+            src="assets/gallery/gallery-dining.webp"
+            alt="Elegant Dining Table at Velora"
+          >
+
+          <div class="gallery-card-overlay"></div>
+
+          <div class="gallery-card-content">
+
+            <span>02</span>
+
+            <h3>
+              Fine Dining
+            </h3>
+
+            <p>
+              Elegant tables prepared for unforgettable evenings.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-card  gallery-card-reveal gallery-delay-3">
+
+          <img
+            src="assets/gallery/gallery-lantern.webp"
+            alt="Arabic Lantern Decoration"
+          >
+
+          <div class="gallery-card-overlay"></div>
+
+          <div class="gallery-card-content">
+
+            <span>03</span>
+
+            <h3>
+              Golden Details
+            </h3>
+
+            <p>
+              Warm lantern light and handcrafted details create the mood.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-card  gallery-card-reveal gallery-delay-4">
+
+          <img
+            src="assets/gallery/gallery-table.webp"
+            alt="Luxury Restaurant Table Setting"
+          >
+
+          <div class="gallery-card-overlay"></div>
+
+          <div class="gallery-card-content">
+
+            <span>04</span>
+
+            <h3>
+              The Table
+            </h3>
+
+            <p>
+              Every detail carefully prepared before your arrival.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="gallery-card gallery-card-wide  gallery-card-reveal gallery-delay-5">
+
+          <img
+            src="assets/gallery/gallery-evening.webp"
+            alt="Velora Restaurant Evening Atmosphere"
+          >
+
+          <div class="gallery-card-overlay"></div>
+
+          <div class="gallery-card-content">
+
+            <span>05</span>
+
+            <h3>
+              An Evening at Velora
+            </h3>
+
+            <p>
+              A warm and intimate atmosphere designed for meaningful moments.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="gallery-bottom gallery-bottom-reveal">
+
+        <div class="gallery-bottom-content">
+
+          <span class="section-label">
+            <i class="fa-solid fa-star"></i>
+            YOUR TABLE AWAITS
+          </span>
+
+          <h2>
+            Create Your Own
+            <span>Velora Moment</span>
+          </h2>
+
+          <p>
+            Join us for an evening of exceptional halal cuisine,
+            elegant surroundings and unforgettable hospitality.
+          </p>
+
+          <a href="#reservation" class="gallery-btn">
+            <span>Reserve Your Table</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+        </div>
+
+        <div class="gallery-bottom-decoration">
+
+          <i class="fa-solid fa-moon"></i>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="section-divider">
+
+    <div class="divider-line"></div>
+    <div class="divider-logo">
+      <span></span>
+      <img
+        src="assets/brands/velora-nav.svg"
+        alt="Velora Logo"
+      >
+    </div>
+    <div class="divider-line"></div>
+
   </div>
 
   <section class="contact" id="contact">
 
     <div class="contact-container">
 
-      <div class="contact-info">
-        <span class="contact-tag">CONTACT</span>
+      <div class="contact-hero contact-reveal contact-delay-1">
 
-        <h2>
-          Contact Preview
-        </h2>
+        <span class="contact-label">
+          <i class="fa-regular fa-envelope"></i>
+          Get In Touch
+        </span>
 
-        <div class="gallery-line"></div>
+        <h1>
+          We're Here
+          <span>for You</span>
+        </h1>
 
-        <p>
-          This contact section is a portfolio demonstration of a modern restaurant website UI. It is not connected to a real business or live contact system.
-        </p>
-
-      <form class="contact-form">
-        <div class="row">
-          <input type="text" placeholder="Your Name">
-          <input type="email" placeholder="Your Email">
+        <div class="contact-divider">
+          <span></span>
+          <i class="fa-solid fa-diamond"></i>
+          <span></span>
         </div>
 
-        <input type="tel" placeholder="Phone Number">
+        <p>
+          This is a demo preview of the contact section only. Once you 
+          purchase the template, your restaurant's own details will be 
+          activated and ready to welcome your guests.
+        </p>
 
-        <input type="text" placeholder="Subject">
+      </div>
 
-        <textarea placeholder="Your Message"></textarea>
+      <div class="contact-main">
 
-        <button type="button">Send Message</button>
+        <div class="contact-details">
 
-        <span class="form-note">
-          This reservation form is a portfolio demonstration and is not connected to a real booking system.
-        </span>
-      </form>
+          <div class="contact-detail contact-reveal contact-delay-2">
+
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div class="contact-detail-content">
+              <span>Location</span>
+              <p>
+                Riyadh, Saudi Arabia
+              </p>
+            </div>
+
+          </div>
+
+          <div class="contact-detail contact-reveal contact-delay-3">
+
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div class="contact-detail-content">
+              <span>Phone</span>
+              <p>
+                +966 00 000 000
+              </p>
+            </div>
+
+          </div>
+
+          <div class="contact-detail contact-reveal contact-delay-4">
+
+            <div class="contact-detail-icon">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+
+            <div class="contact-detail-content">
+              <span>Email</span>
+              <p>
+                contact@velora.ma
+              </p>
+            </div>
+
+          </div>
+
+          <div class="contact-detail contact-reveal contact-delay-5">
+
+            <div class="contact-detail-icon">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+
+            <div class="contact-detail-content">
+              <span>Opening Hours</span>
+              <p>
+                12:00 PM – 12:00 AM<br>
+                Daily
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="contact-form-card contact-reveal contact-delay-6">
+
+          <form class="contact-form">
+
+            <div class="contact-form-row">
+
+              <div class="contact-form-group">
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  placeholder=" "
+                  required
+                >
+
+                <label for="contact-name">
+                  Your Name
+                </label>
+              </div>
+
+              <div class="contact-form-group">
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  placeholder=" "
+                  required
+                >
+
+                <label for="contact-email">
+                  Your Email
+                </label>
+              </div>
+
+            </div>
+
+            <div class="contact-form-group">
+              <input
+                type="text"
+                id="contact-subject"
+                name="subject"
+                placeholder=" "
+                required
+              >
+
+              <label for="contact-subject">
+                Subject
+              </label>
+            </div>
+
+            <div class="contact-form-group contact-message-group">
+              <textarea
+                id="contact-message"
+                name="message"
+                placeholder=" "
+                required
+              ></textarea>
+
+              <label for="contact-message">
+                Your Message
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              class="contact-submit"
+            >
+              <span>Send Message</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
 
     </div>
+
   </section>
 
-  <footer class="footer">
-  <div class="footer-container">
+  <section class="contact-location" id="contact">
 
-    <div class="footer-col">
+    <div class="contact-location-container">
 
-    <a href="">
-      <img class="brand" src="assets/brands/brand.png" alt="brand">
-    </a>
+      <div class="contact-location-image contact-reveal contact-delay-7">
 
-    <p>
-      A restaurant concept website created to showcase modern Front-End and UI/UX design skills. This project is part of a portfolio presentation.
-    </p>
+        <img
+          src="assets/restaurant/contact-exterior.webp"
+          alt="Velora Fine Dining Restaurant Entrance"
+        >
 
-      <a href="#reservations" class="btn">Reserve A Table</a>
+      </div>
+
+      <div class="contact-map-card contact-reveal contact-delay-8">
+
+        <div class="contact-map-visual">
+
+          <div class="map-grid"></div>
+
+          <div class="map-route map-route-one"></div>
+          <div class="map-route map-route-two"></div>
+
+          <div class="map-pin">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+
+        </div>
+
+        <div class="contact-map-content">
+
+          <span class="contact-map-label">
+            Our Location
+          </span>
+
+          <div class="contact-map-info">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <p>
+              Riyadh, Saudi Arabia
+            </p>
+
+          </div>
+
+          <a
+            href="#"
+            class="contact-map-btn"
+          >
+            <span>View On Map</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="footer-col">
-      <h3>Quick Links</h3>
+  </section>
 
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#ourstory">Our Story</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#reservations">Reservations</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <div class="section-divider">
+
+    <div class="divider-line"></div>
+    <div class="divider-logo">
+      <span></span>
+      <img
+        src="assets/brands/velora-nav.svg"
+        alt="Velora Logo"
+      >
     </div>
-
-    <div class="footer-col b">
-      <h3>Contact Info</h3>
-
-      <div class="contact-item">
-        <i class="fa-solid fa-location-dot"></i>
-        +City / Portfolio Location
-      </div>
-
-      <div class="contact-item">
-        <i class="fa-solid fa-phone"></i>
-        +00 000 000 000
-      </div>
-
-      <div class="contact-item">
-        <i class="fa-regular fa-envelope"></i>
-        example@portfolio.com
-      </div>
-
-      <div class="contact-item">
-        <i class="fa-regular fa-clock"></i>
-        Mon - Sun | 9AM - 6PM (Concept)
-      </div>
-    </div>
-
-    <div class="footer-col a">
-      <h3>Follow Us</h3>
-
-      <div class="socials">
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-      </div>
-    </div>
+    <div class="divider-line"></div>
 
   </div>
 
-  <section class="footer-mobile">
+  <footer class="footer" id="footer">
 
-    <a href="">
-      <img class="bd" src="assets/brands/brand.png" alt="brand">
-    </a>
+  <div class="footer-container">
 
-    <div class="socials">
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    <section class="footer-features">
+
+      <div class="footer-feature footer-reveal footer-delay-1">
+        <div class="footer-feature-icon">
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+
+        <div class="footer-feature-content">
+          <h3>Exquisite Cuisine</h3>
+          <p>
+            A harmonious blend of flavors and artistry.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-feature footer-reveal footer-delay-2">
+        <div class="footer-feature-icon">
+          <i class="fa-solid fa-bell-concierge"></i>
+        </div>
+
+        <div class="footer-feature-content">
+          <h3>Impeccable Service</h3>
+          <p>
+            Thoughtful service for an unforgettable experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-feature footer-reveal footer-delay-3">
+        <div class="footer-feature-icon">
+          <i class="fa-solid fa-wine-glass"></i>
+        </div>
+
+        <div class="footer-feature-content">
+          <h3>Elegant Ambiance</h3>
+          <p>
+            Elegant spaces designed for special moments.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-feature footer-reveal footer-delay-4">
+        <div class="footer-feature-icon">
+          <i class="fa-solid fa-gem"></i>
+        </div>
+
+        <div class="footer-feature-content">
+          <h3>Premium Ingredients</h3>
+          <p>
+            The finest ingredients, sourced with integrity.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="footer-main">
+
+      <div class="footer-about footer-reveal footer-delay-1">
+
+        <span class="footer-heading">
+          About Velora
+        </span>
+
+        <div class="footer-heading-line"></div>
+
+        <p>
+          Velora Fine Dining is where culinary excellence
+          meets refined elegance. Every detail is crafted
+          to offer an unparalleled dining experience.
+        </p>
+
+        <div class="footer-about-divider">
+          <span></span>
+          <i class="fa-solid fa-diamond"></i>
+          <span></span>
+        </div>
+
+        <div class="footer-about-image">
+          <img
+            src="assets/restaurant/footer-dining.webp"
+            alt="Velora Fine Dining Interior"
+          >
+        </div>
+
+      </div>
+
+      <nav class="footer-links footer-reveal footer-delay-2">
+
+        <span class="footer-heading">
+          Quick Links
+        </span>
+
+        <div class="footer-heading-line"></div>
+
+        <ul>
+          <li>
+            <a href="#home">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#story">
+              <span>Our Story</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#menu">
+              <span>Menu</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#reservations">
+              <span>Reservations</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#gallery">
+              <span>Gallery</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact">
+              <span>Contact</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="footer-brand footer-reveal footer-delay-3">
+
+        <div class="footer-brand-logo">
+          <img
+            src="assets/brands/velora-nav.svg"
+            alt="Velora Fine Dining Logo"
+          >
+        </div>
+
+        <h2>VELORA</h2>
+
+        <small>
+          FINE DINING
+        </small>
+
+        <div class="footer-brand-divider">
+          <span></span>
+          <i class="fa-solid fa-diamond"></i>
+          <span></span>
+        </div>
+
+        <p>
+          Experience A Higher Standard
+        </p>
+
+        <div class="footer-social">
+
+          <span class="footer-social-label">
+            Follow Us
+          </span>
+
+          <div class="footer-social-links">
+
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-contact footer-reveal footer-delay-4">
+
+        <span class="footer-heading">
+          Contact Us
+        </span>
+
+        <div class="footer-heading-line"></div>
+
+        <div class="footer-contact-list">
+
+          <a href="#" class="footer-contact-item">
+
+            <span class="footer-contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+
+            <span>
+              Velora Fine Dining
+              <small>Riyadh, Saudi Arabia</small>
+            </span>
+
+          </a>
+
+
+          <a href="tel:+966111234567" class="footer-contact-item">
+
+            <span class="footer-contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+
+            <span>
+              +966 00 000 000
+            </span>
+
+          </a>
+
+
+          <a
+            href="mailto:contact@velora.sa"
+            class="footer-contact-item"
+          >
+
+            <span class="footer-contact-icon">
+              <i class="fa-regular fa-envelope"></i>
+            </span>
+
+            <span>
+              contact@velora.sa
+            </span>
+
+          </a>
+
+
+          <div class="footer-contact-item">
+
+            <span class="footer-contact-icon">
+              <i class="fa-regular fa-clock"></i>
+            </span>
+
+            <span>
+              12:00 PM – 12:00 AM
+              <small>Daily</small>
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-newsletter footer-reveal footer-delay-5">
+
+        <span class="footer-heading">
+          Newsletter
+        </span>
+
+        <div class="footer-heading-line"></div>
+
+        <p>
+          Stay updated with our latest news
+          and exclusive offers.
+        </p>
+
+        <form class="footer-newsletter-form">
+
+          <div class="footer-input">
+
+            <input
+              type="email"
+              id="footer-email"
+              placeholder=" "
+              required
+            >
+
+            <label for="footer-email">
+              Your email address
+            </label>
+
+          </div>
+
+          <button type="submit">
+
+            <span>
+              Subscribe
+            </span>
+
+            <i class="fa-regular fa-paper-plane"></i>
+
+          </button>
+
+        </form>
+
+        <div class="footer-decoration">
+          <i class="fa-solid fa-leaf"></i>
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="footer-bottom">
+
+        <p>
+          © 2026 Velora Fine Dining. All Rights Reserved.
+        </p>
+
+        <p>
+          Designed with
+          <i class="fa-solid fa-heart"></i>
+          for exceptional experiences.
+        </p>
+
+    </section>
+
     </div>
 
-  </section>
-
-    <div class="footer-bottom">
-      © 2025 Veltra Restaurant. All Rights Reserved.
-    </div>
   </footer>
 
-  <button id="scrollTopBtn" class="scroll-top">
-    <i class="fa-solid fa-arrow-up"></i>
+  <button
+    class="back-to-top"
+    id="backToTop"
+    type="button"
+    aria-label="Back to top"
+  >
+    <span class="back-to-top-icon">
+      <i class="fa-solid fa-arrow-up"></i>
+    </span>
+
+    <span class="back-to-top-line"></span>
   </button>
 
   <script src="main.js"></script>
