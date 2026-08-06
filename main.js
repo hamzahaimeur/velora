@@ -1,5 +1,3 @@
-
-
 // --- nav scrolled ---
 
 const navbar = document.querySelector(".navbar");
