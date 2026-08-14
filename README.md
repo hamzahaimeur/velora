@@ -1,89 +1,104 @@
-<img src="/assets/brands/veltra.png" alt="Portfolio banner" width="100%" align="center"/>
+# Velora | Premium Halal Restaurant Website Template
 
-# 🌐 Veltra - Restaurant Website Template
+![Velora Preview](https://velora-ui.vercel.app/assets/preview.png)
 
-A modern and fully responsive restaurant website template designed for commercial use.
+**Live Demo:** [velora-ui.vercel.app](https://velora-ui.vercel.app/)
 
-This project is a **ready-to-use frontend template** that can be customized for real restaurants, businesses, or personal projects.
-
-🚀 **Live Demo:** https://veltra-ui.vercel.app/
-
----
-
-## 📌 About the Project
-
-Veltra is a professionally designed restaurant website template built using HTML, CSS, and JavaScript.
-
-It is intended for:
-- Small restaurant businesses
-- Developers who need a ready-made UI
-- Customization and commercial use
-
-Unlike a portfolio-only project, this template is designed to be reused and adapted for real-world applications.
+Velora is a premium, fully responsive website template designed for luxury halal restaurants and fine dining brands. Built with pure **HTML, CSS, and JavaScript** — no frameworks, no dependencies, just clean and easy-to-customize code.
 
 ---
 
 ## ✨ Features
 
-* Fully Responsive Design  
-* Modern UI/UX Design  
-* Clean and reusable code structure  
-* Smooth navigation  
-* Mobile-friendly layout  
-* Easy to customize  
+- 🎨 **Elegant, modern design** tailored for fine dining & luxury restaurant branding
+- 📱 **Fully responsive** — looks great on desktop, tablet, and mobile
+- 🍽️ **Interactive menu section** with category filtering (Appetizers, Main Courses, Grill, Desserts, Drinks, etc.)
+- 📅 **Reservation form** with date, time, and guest selection
+- 🖼️ **Gallery section** to showcase your restaurant's ambiance
+- 📖 **Our Story / Timeline** section to tell your restaurant's journey
+- 📩 **Contact section** with embedded map placeholder and contact form
+- ⚡ **Fast & lightweight** — no heavy frameworks, optimized for performance
+- 🌙 **Dark, luxury color palette** with smooth animations and transitions
+- 🔧 **Easy to customize** — clear code structure, well-commented sections
 
 ---
 
-## 🛠️ Technologies Used
+## 🗂️ Project Structure
 
-* HTML5
-* CSS3
-* JavaScript (Vanilla JS)
-* Vercel (Deployment)
-
----
-
-## 📁 Project Structure
-
-```text
-veltra/
+```
+velora/
+├── index.html          # Main HTML file
 ├── assets/
-├── css/
-├── js/
-├── index.html
-└── README.md
+│   ├── brands/          # Logo & branding assets
+│   ├── restaurant/       # Restaurant photos
+│   ├── menu/             # Menu item images
+│   └── gallery/          # Gallery images
+├── main.css        # Main stylesheet
+├── main.js         # Interactivity (menu filter, forms, animations...)
+├── robots.txt
+├── sitemap.xml
+└── README.md 
 ```
 
----
+> ℹ️ Adjust this structure to match your actual folder/file names before publishing.
 
+---
+ 
 ## 🚀 Getting Started
-
-### Clone the Repository
-
+ 
+1. **Clone or download** this repository:
 ```bash
-git clone https://github.com/hamzahaimeur/veltra.git
+   git clone https://github.com/your-username/velora.git
 ```
-
-### Navigate to the Project Folder
-
-```bash
-cd veltra
-```
-
-### Open the Project
-
-Simply open `index.html` in your browser.
+2. Open `index.html` directly in your browser — that's it, no build tools or dependencies required.
+   Prefer a local server (optional, useful for live-reload while editing)?
+   - **VS Code**: install the "Live Server" extension, right-click `index.html` → "Open with Live Server"
+   - **Python**: `python3 -m http.server`
+   - **Node.js**: `npx serve .`
+3. Start customizing — see below 👇
 
 ---
 
-## 👨‍💻 Author
+## 🎨 Customization Guide
 
-**Hamza Haimeur**
+| What to change            | Where                              |
+|----------------------------|-------------------------------------|
+| Restaurant name & logo     | `assets/brands/` + `index.html`     |
+| Colors & fonts              | `main.css` (CSS variables)    |
+| Menu items & prices        | Menu section in `index.html`        |
+| Story & timeline content   | Our Story section in `index.html`   |
+| Gallery images              | `assets/gallery/`                  |
+| Contact info & map         | Contact section in `index.html`     |
+| Reservation form behavior  | `main.js`                     |
 
-GitHub: https://github.com/hamzahaimeur
+All colors are defined as CSS variables at the top of `main.css`, so you can rebrand the entire template by changing a few values.
+
+---
+
+## 🛠️ Built With
+
+- HTML5
+- CSS3 (Flexbox, Grid, custom properties)
+- Vanilla JavaScript
+- Hosted on [Vercel](https://vercel.com/)
 
 ---
 
 ## 📄 License
 
-This template can be used for personal and commercial projects, with full permission to modify and customize it as needed.
+This template is available for personal and commercial use.
+*(Adjust this section depending on how you plan to sell/distribute it — e.g. "Single license per client purchase", "No redistribution or resale of the template itself", etc.)*
+
+---
+
+## 📬 Contact
+
+Interested in a custom version of this template for your restaurant?
+
+- Email: hamzahaimeur01@gmail
+- Portfolio : https://hamzahaimeur.vercel.app/
+- Upwork : https://www.upwork.com/freelancers/~01f70c9f3ff327587a
+
+---
+
+<p align="center">Designed with ❤️ for exceptional dining experiences.</p>

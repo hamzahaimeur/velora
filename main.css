@@ -4090,36 +4090,54 @@ li a:hover {
     line-height: 1.8;
   }
 
+  .menu .menu-bottom {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    width: calc(100% - 2rem);
+  }
+
+  .menu .menu-banner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 1.75rem;
+    border-radius: 1.5rem;
+  }
+
+
+  .menu .banner-badge {
+    padding: .6rem 1rem;
+    margin-bottom: 1.2rem;
+    font-size: .68rem;
+    letter-spacing: .12rem;
+  }
+
+  .menu .banner-content h3 {
+    margin-bottom: 1.2rem;
+    font-size: clamp(2rem, 8vw, 2.6rem);
+    line-height: 1.05;
+  }
+
+  .menu .banner-content p {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: .92rem;
+    line-height: 1.7;
+  }
+
   .menu .banner-features {
     flex-direction: column;
-
     gap: .8rem;
-
     margin-bottom: 1.8rem;
   }
-
   .menu .banner-feature {
-    width: 100%;
-    min-width: 0;
-
-    padding: .9rem 1rem;
-
-    text-align: left;
+    min-width: 100%;
+    padding: .85rem 1rem;
   }
-
-  .menu .banner-feature:hover {
-    transform: translateY(-3px);
-  }
-
   .menu .banner-feature i {
-    flex-shrink: 0;
-
-    width: 46px;
-    height: 46px;
-
+    width: 44px;
+    height: 44px;
     font-size: 1rem;
   }
-
   .menu .banner-feature strong {
     font-size: .85rem;
   }
@@ -4129,27 +4147,19 @@ li a:hover {
   }
 
   .menu .menu-btn {
-    justify-content: center;
     width: 100%;
-    padding: .95rem 1.3rem;
-    font-size: .85rem;
+    justify-content: center;
+    padding: .9rem 1.4rem;
+    font-size: .92rem;
   }
 
   .menu .banner-image {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 1.2rem;
-    overflow: hidden;
-    background: oklch(.12 .012 255);
-    order: -1;
+    height: auto;
   }
 
   .menu .banner-image img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    border-radius: 1.2rem;
   }
 
 }
