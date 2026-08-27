@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Watch Our Story | Velora</title>
+  <meta name="description" content="Watch the Velora story — a demo video showcase page for the Velora premium halal restaurant template, featuring a fictional brand narrative.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0e0e0e">
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" type="image/svg+xml" href="assets/brands/velora.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brands/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brands/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/brands/apple-touch-icon.png">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="main.css">
+
+  <style>
+
+    /* ==========================================================
+       Watch Our Story — page-specific styles (namespaced "wsv-")
+       Palette matches main.css exactly (OKLCH), nothing in
+       main.css / main.js / index.html is overridden here.
+       ========================================================== */
+
+    :root {
+      --wsv-bg: oklch(6% 0.01 40);
+      --wsv-panel: oklch(.13 .015 255 / .92);
+      --wsv-panel-solid: oklch(.12 .012 255);
+      --wsv-panel-soft: oklch(.16 .015 255 / .45);
+      --wsv-border: oklch(.30 .02 80 / .12);
+      --wsv-border-strong: oklch(.68 .10 74 / .25);
+
+      --wsv-gold-1: oklch(.86 .16 84);
+      --wsv-gold-2: oklch(.73 .13 74);
+      --wsv-gold-3: oklch(.84 .16 82);
+      --wsv-gold-4: oklch(.90 .17 88);
+
+      --wsv-text: oklch(0.97 0.01 90);
+      --wsv-text-soft: oklch(0.72 0.015 80);
+      --wsv-text-mute: oklch(0.55 0.015 80);
+    }
+
+    .wsv-page {
+      background-color: var(--wsv-bg);
+      background-image:
+        radial-gradient(at 12% 0%, oklch(26% 0.05 55 / .12), transparent 55%),
+        radial-gradient(at 90% 10%, oklch(20% 0.04 35 / .10), transparent 60%),
+        radial-gradient(at 50% 100%, oklch(16% 0.03 25 / .08), transparent 65%);
+      color: var(--wsv-text-soft);
+      min-height: 100vh;
+      padding-top: 92px;
+      overflow-x: hidden;
+    }
+
+    .wsv-container {
+      width: 100%;
+      max-width: 1200px;
+      margin-inline: auto;
+      padding-inline: 1.5rem;
+    }
+
+    /* --- breadcrumb hero --- */
+
+    .wsv-hero {
+      padding-block: 3.5rem 2.5rem;
+      text-align: center;
+    }
+
+    .wsv-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .8rem;
+      letter-spacing: .04rem;
+      color: var(--wsv-text-mute);
+      margin-bottom: 1.25rem;
+    }
+
+    .wsv-breadcrumb a {
+      color: var(--wsv-text-soft);
+      text-decoration: none;
+      transition: color .25s;
+    }
+
+    .wsv-breadcrumb a:hover {
+      color: var(--wsv-gold-3);
+    }
+
+    .wsv-breadcrumb i {
+      font-size: .65rem;
+      color: var(--wsv-gold-2);
+    }
+
+    .wsv-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .5rem 1.1rem;
+      border-radius: 3rem;
+      border: 1px solid var(--wsv-border-strong);
+      background: var(--wsv-panel-soft);
+      backdrop-filter: blur(10px);
+      color: var(--wsv-gold-3);
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .08rem;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .wsv-hero h1 {
+      font-size: clamp(2.1rem, 4.5vw, 3.4rem);
+      line-height: 1.15;
+      color: var(--wsv-text);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .wsv-hero h1 span {
+      background: linear-gradient(180deg, var(--wsv-gold-1), var(--wsv-gold-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .wsv-hero p {
+      max-width: 620px;
+      margin-inline: auto;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    /* --- demo notice banner --- */
+
+    .wsv-notice {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      max-width: 900px;
+      margin: 0 auto 3rem;
+      padding: 1.1rem 1.4rem;
+      border-radius: 1rem;
+      border: 1px solid var(--wsv-border-strong);
+      background: linear-gradient(180deg, oklch(.18 .015 255), oklch(.13 .012 255));
+      box-shadow: 0 18px 45px oklch(.03 .01 255 / .35);
+    }
+
+    .wsv-notice i {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      border-radius: .8rem;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(180deg, var(--wsv-gold-1), var(--wsv-gold-2));
+      color: var(--wsv-panel-solid);
+      font-size: .95rem;
+    }
+
+    .wsv-notice strong {
+      display: block;
+      color: var(--wsv-text);
+      font-size: .92rem;
+      letter-spacing: .02rem;
+      margin-bottom: .3rem;
+    }
+
+    .wsv-notice p {
+      font-size: .88rem;
+      line-height: 1.7;
+      color: var(--wsv-text-soft);
+    }
+
+    /* --- video player mock --- */
+
+    .wsv-player-wrap {
+      max-width: 1000px;
+      margin: 0 auto 4.5rem;
+    }
+
+    .wsv-player {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      border-radius: 1.4rem;
+      overflow: hidden;
+      border: 1px solid var(--wsv-border-strong);
+      box-shadow: 0 28px 70px oklch(.02 .01 255 / .55);
+    }
+
+    .wsv-player img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(.55) saturate(1.05);
+    }
+
+    .wsv-player::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, oklch(.05 .01 40 / .15), oklch(.04 .01 40 / .75));
+    }
+
+    .wsv-player-badge {
+      position: absolute;
+      top: 1.1rem;
+      left: 1.1rem;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .4rem .85rem;
+      border-radius: 3rem;
+      background: oklch(.10 .012 255 / .65);
+      border: 1px solid var(--wsv-border-strong);
+      color: var(--wsv-gold-3);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .06rem;
+      text-transform: uppercase;
+      backdrop-filter: blur(8px);
+    }
+
+    .wsv-player-duration {
+      position: absolute;
+      bottom: 1.1rem;
+      right: 1.1rem;
+      z-index: 2;
+      padding: .35rem .75rem;
+      border-radius: .5rem;
+      background: oklch(.10 .012 255 / .65);
+      border: 1px solid var(--wsv-border);
+      color: var(--wsv-text);
+      font-size: .78rem;
+      letter-spacing: .03rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .wsv-player-caption {
+      position: absolute;
+      left: 1.4rem;
+      bottom: 1.1rem;
+      z-index: 2;
+      max-width: 70%;
+    }
+
+    .wsv-player-caption h3 {
+      color: var(--wsv-text);
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: .25rem;
+    }
+
+    .wsv-player-caption span {
+      font-size: .82rem;
+      color: var(--wsv-text-soft);
+    }
+
+    .wsv-play-btn {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      display: grid;
+      place-items: center;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .wsv-play-btn .wsv-play-circle {
+      position: relative;
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(180deg, var(--wsv-gold-1), var(--wsv-gold-2));
+      color: var(--wsv-panel-solid);
+      font-size: 1.6rem;
+      box-shadow: 0 0 0 1px oklch(.90 .17 88 / .35), 0 20px 45px oklch(.74 .13 74 / .45);
+      transition: transform .3s ease;
+    }
+
+    .wsv-play-btn::before,
+    .wsv-play-btn::after {
+      content: "";
+      position: absolute;
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      border: 1px solid oklch(.86 .16 84 / .45);
+      animation: wsv-pulse 2.4s ease-out infinite;
+    }
+
+    .wsv-play-btn::after {
+      animation-delay: 1.2s;
+    }
+
+    @keyframes wsv-pulse {
+      0% { transform: scale(1); opacity: .8; }
+      100% { transform: scale(1.9); opacity: 0; }
+    }
+
+    .wsv-play-btn:hover .wsv-play-circle {
+      transform: scale(1.08);
+    }
+
+    .wsv-player-note {
+      text-align: center;
+      font-size: .82rem;
+      color: var(--wsv-text-mute);
+      margin-top: 1rem;
+      font-style: italic;
+    }
+
+    /* --- editorial split section --- */
+
+    .wsv-split {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 3.5rem;
+      align-items: start;
+      margin-bottom: 4.5rem;
+    }
+
+    .wsv-quote-card {
+      position: sticky;
+      top: 120px;
+      padding: 2rem;
+      border-radius: 1.2rem;
+      border: 1px solid var(--wsv-border);
+      background: linear-gradient(180deg, oklch(.17 .015 255), oklch(.11 .012 255));
+      box-shadow: 0 20px 55px oklch(.02 .01 255 / .42);
+    }
+
+    .wsv-quote-card i.fa-quote-left {
+      color: var(--wsv-gold-3);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .wsv-quote-card p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--wsv-text);
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+
+    .wsv-quote-person {
+      display: flex;
+      align-items: center;
+      gap: .9rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--wsv-border);
+    }
+
+    .wsv-quote-avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(180deg, var(--wsv-gold-1), var(--wsv-gold-2));
+      color: var(--wsv-panel-solid);
+      font-size: 1rem;
+    }
+
+    .wsv-quote-person h4 {
+      color: var(--wsv-text);
+      font-size: .95rem;
+      margin-bottom: .1rem;
+    }
+
+    .wsv-quote-person span {
+      font-size: .78rem;
+      color: var(--wsv-text-mute);
+    }
+
+    .wsv-story-text h2 {
+      color: var(--wsv-text);
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 1.1rem;
+    }
+
+    .wsv-story-text p {
+      font-size: .96rem;
+      line-height: 1.85;
+      margin-bottom: 1.2rem;
+    }
+
+    .wsv-story-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* --- pillars --- */
+
+    .wsv-pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 4.5rem;
+    }
+
+    .wsv-pillar {
+      padding: 1.8rem;
+      border-radius: 1.1rem;
+      border: 1px solid var(--wsv-border);
+      background: var(--wsv-panel-soft);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      transition: transform .3s ease, border-color .3s ease;
+    }
+
+    .wsv-pillar:hover {
+      transform: translateY(-6px);
+      border-color: var(--wsv-border-strong);
+    }
+
+    .wsv-pillar i {
+      width: 56px;
+      height: 56px;
+      margin-inline: auto 1rem;
+      margin-bottom: 1rem;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(180deg, var(--wsv-gold-1), var(--wsv-gold-2));
+      color: var(--wsv-panel-solid);
+      font-size: 1.2rem;
+    }
+
+    .wsv-pillar h3 {
+      color: var(--wsv-text);
+      font-size: 1.05rem;
+      margin-bottom: .5rem;
+    }
+
+    .wsv-pillar p {
+      font-size: .85rem;
+      line-height: 1.7;
+    }
+
+    /* --- CTA band --- */
+
+    .wsv-cta {
+      text-align: center;
+      padding: 3.5rem 2rem;
+      border-radius: 1.4rem;
+      border: 1px solid var(--wsv-border-strong);
+      background: linear-gradient(180deg, oklch(.15 .015 255), oklch(.10 .012 255));
+      margin-bottom: 4rem;
+    }
+
+    .wsv-cta h2 {
+      color: var(--wsv-text);
+      font-size: 1.7rem;
+      margin-bottom: .8rem;
+    }
+
+    .wsv-cta p {
+      max-width: 480px;
+      margin: 0 auto 1.8rem;
+      font-size: .95rem;
+      line-height: 1.7;
+    }
+
+    .wsv-cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* --- minimal footer --- */
+
+    .wsv-footer {
+      border-top: 1px solid var(--wsv-border);
+      padding: 1.8rem 0;
+      text-align: center;
+      font-size: .82rem;
+      color: var(--wsv-text-mute);
+    }
+
+    .wsv-footer a {
+      color: var(--wsv-gold-3);
+      text-decoration: none;
+    }
+
+    /* --- responsive --- */
+
+    @media (max-width: 900px) {
+      .wsv-split {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .wsv-quote-card {
+        position: static;
+      }
+
+      .wsv-pillars {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .wsv-player-caption {
+        max-width: 100%;
+      }
+
+      .wsv-player-caption h3 {
+        font-size: .95rem;
+      }
+    }
+
+  </style>
+</head>
+<body class="wsv-page">
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+
+      <div href="" class="brand">
+        <img src="assets/brands/velora-nav.svg" alt="Velora Logo">
+        <div class="brand-text">
+          <span class="brand-name">VELORA</span>
+          <span class="brand-subtitle">FINE DINING</span>
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a class="active" href="index.html#story">Our Story</a></li>
+        <li><a href="index.html#menu">Menu</a></li>
+        <li><a href="index.html#reservation">Reservations</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="index.html#reservation" class="reservation-btn">
+          <i class="fa-regular fa-calendar"></i>
+          <span>Reserve A Table</span>
+        </a>
+      </div>
+
+      <button class="menu-btn" aria-label="Open Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+
+    <div class="menu-top">
+
+      <a href="index.html#home" class="mobile-brand">
+        <img src="assets/brands/velora-nav.svg" alt="Velora Logo">
+      </a>
+
+      <button class="close-btn" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+    </div>
+
+    <ul class="mobile-links">
+
+      <li>
+        <a href="index.html#home">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#story">
+          <i class="fa-solid fa-book-open"></i>
+          <span>Our Story</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#menu">
+          <i class="fa-solid fa-utensils"></i>
+          <span>Menu</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#reservation">
+          <i class="fa-regular fa-calendar"></i>
+          <span>Reservations</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#gallery">
+          <i class="fa-regular fa-image"></i>
+          <span>Gallery</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#contact">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li>
+
+    </ul>
+
+    <a href="index.html#reservation" class="mobile-btn">
+      <i class="fa-regular fa-calendar"></i>
+      <span>Reserve A Table</span>
+    </a>
+
+  </div>
+
+  <div class="overlay"></div>
+
+  <main>
+
+    <div class="wsv-container">
+
+      <section class="wsv-hero">
+
+        <div class="wsv-breadcrumb">
+          <a href="index.html#home">Home</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <a href="index.html#story">Our Story</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>Watch Our Story</span>
+        </div>
+
+        <span class="wsv-eyebrow">
+          <i class="fa-solid fa-clapperboard"></i>
+          Behind The Scenes
+        </span>
+
+        <h1>Watch The <span>Velora</span> Story Unfold</h1>
+
+        <p>
+          A closer look at the people, the craft, and the passion behind every
+          plate — told through the lens of the restaurant featured in this
+          template.
+        </p>
+
+      </section>
+
+      <div class="wsv-notice">
+        <i class="fa-solid fa-circle-info"></i>
+        <div>
+          <strong>Demo Content — Fictional Story</strong>
+          <p>
+            This entire page, including the video placeholder, the founder
+            quote, and the story text below, is fictional sample content
+            created only to demonstrate how the "Our Story" video button looks
+            and behaves inside the Velora template. No real restaurant,
+            person, or footage is represented here — everything is fully
+            replaceable with your own video and brand story.
+          </p>
+        </div>
+      </div>
+
+      <section class="wsv-player-wrap">
+
+        <div class="wsv-player">
+
+          <img src="assets/restaurant/story.webp" alt="Velora restaurant interior — video placeholder">
+
+          <span class="wsv-player-badge">
+            <i class="fa-solid fa-clapperboard"></i>
+            Demo Video Placeholder
+          </span>
+
+          <span class="wsv-player-duration">04:12</span>
+
+          <div class="wsv-player-caption">
+            <h3>The Velora Story</h3>
+            <span>Behind the scenes of a fictional fine dining journey</span>
+          </div>
+
+          <button class="wsv-play-btn" type="button" aria-label="Play story video">
+            <span class="wsv-play-circle">
+              <i class="fa-solid fa-play"></i>
+            </span>
+          </button>
+
+        </div>
+
+        <p class="wsv-player-note">
+          This frame is a placeholder — swap the image with your own poster
+          and embed your restaurant's real video file or player here.
+        </p>
+
+      </section>
+
+      <section class="wsv-split">
+
+        <div class="wsv-quote-card">
+
+          <i class="fa-solid fa-quote-left"></i>
+
+          <p>
+            "We didn't just want to open a restaurant — we wanted to build a
+            place where halal dining felt as refined as anywhere else in the
+            world."
+          </p>
+
+          <div class="wsv-quote-person">
+            <span class="wsv-quote-avatar">
+              <i class="fa-solid fa-user-tie"></i>
+            </span>
+            <div>
+              <h4>Restaurant Owner</h4>
+              <span>Founder & Executive Chef — Fictional Persona</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="wsv-story-text">
+
+          <h2>A Story Written For This Template</h2>
+
+          <p>
+            In this demo narrative, Velora began as a single family kitchen
+            in 2018, built on a simple promise: every dish would be prepared
+            with certified halal ingredients and the same care you would give
+            a guest in your own home. What started with a handful of tables
+            slowly grew into a name people trusted for celebrations, quiet
+            dinners, and everything in between.
+          </p>
+
+          <p>
+            The video above imagines a short documentary following that
+            journey — from the early mornings spent sourcing produce at the
+            market, to the late nights perfecting a signature sauce, to the
+            first evening the doors opened to the public. It is written to
+            show how a "watch our story" page can carry real emotional
+            weight once it is filled with an actual restaurant's footage and
+            history.
+          </p>
+
+          <p>
+            When you customize Velora for a real client, this is where you
+            would replace the fictional founder, dates, and milestones with
+            their genuine story — their reasons for opening, the recipes
+            passed down in their family, and the values that guide their
+            kitchen today.
+          </p>
+
+        </div>
+
+      </section>
+
+      <section class="wsv-pillars">
+
+        <div class="wsv-pillar">
+          <i class="fa-solid fa-seedling"></i>
+          <h3>Heritage Recipes</h3>
+          <p>Fictional dishes inspired by generations of family cooking, reimagined for a modern table.</p>
+        </div>
+
+        <div class="wsv-pillar">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h3>100% Halal Commitment</h3>
+          <p>Every ingredient in this sample story is presented as certified and carefully sourced.</p>
+        </div>
+
+        <div class="wsv-pillar">
+          <i class="fa-solid fa-award"></i>
+          <h3>Modern Craft</h3>
+          <p>A narrative built to show off elegant typography, imagery, and layout — ready for your content.</p>
+        </div>
+
+      </section>
+
+      <section class="wsv-cta">
+
+        <h2>Like What You See?</h2>
+
+        <p>
+          This page is part of the Velora template's demo content. Head back
+          to explore the rest of the design, or reserve a table on the sample
+          reservation section.
+        </p>
+
+        <div class="wsv-cta-buttons">
+
+          <a href="index.html#reservation" class="btn-primary">
+            <i class="fa-regular fa-calendar"></i>
+            Reserve A Table
+          </a>
+
+          <a href="index.html#story" class="btn-secondary">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back To Our Story
+          </a>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="wsv-footer">
+    <p>
+      Velora — demo page for the "Our Story" video button ·
+      <a href="index.html">Back to home</a>
+    </p>
+  </footer>
+
+  <button
+    class="back-to-top"
+    id="backToTop"
+    type="button"
+    aria-label="Back to top"
+  >
+    <span class="back-to-top-icon">
+      <i class="fa-solid fa-arrow-up"></i>
+    </span>
+
+    <span class="back-to-top-line"></span>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
